@@ -1,5 +1,3 @@
-# BSAN 406 Project 6
-# Nick Triplett
 
 import pandas as pd
 import plotly.express as px
@@ -11,6 +9,7 @@ from pybaseball import batting_stats, pitching_stats
 
 # Instantiating the Dashboard
 dashboard = Dash(__name__,external_stylesheets=[dbc.themes.SANDSTONE],use_pages=True)
+server=dashboard.server
 dashboard.title = 'Project 6 Dashboard'
 
 # The Dashboard Layout
